@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.header {
+  width: 100%;
+  background-color: #213b52;
+}
+.header .container {
+  width: 80%;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  background-color:red;
+}
+.header .container h3{
+    color:white;
+}
+.header .container h3 span {
+  color: #fdc134;
+}
+.header .container ul{
+    display:flex;
+}
+.header .container ul li{
+    margin-right:20px;
+    list-style-type: none;
+}
+.header .container ul li a{
+    text-decoration:none;
+    color: 
+}
+

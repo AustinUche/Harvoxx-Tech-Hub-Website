@@ -1,0 +1,138 @@
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+} */
+
+/* .box{
+    background-color:yellow;
+    width:100px;
+    margin:auto;
+    padding:10px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding: 10px 30px 50px 70px;
+    padding: 50px 100px;
+    margin: 30px;
+    margin-top: 50px;
+    margin: 10px 40px 50px 80px;    
+    
+} */
+
+.parent{
+    display:flex;
+    flex-wrap:wrap;
+    width: 400px;
+    /* height: 400px; */
+    background-color:blue;
+    padding:10px;
+    margin-bottom:50px;
+}
+.parent .child1{
+    display:flex;
+    width:100%;
+    height:100px;
+    background-color:yellow;
+    margin-bottom:10px;
+}
+.parent .child2{
+    display:flex;
+    flex-wrap:wrap;
+    width:48%;
+    height:100px;
+    background-color:red;
+    margin-right:4%;
+    margin-bottom:10px;
+}
+.parent .child3{
+    display:flex;
+    flex-wrap:wrap;
+    width:48%;
+    height:100px;
+    background-color:teal;
+}
+.parent .child3 .child31{
+    width:50%;
+    height: 50px;
+    background-color:navy;
+}
+.parent .child3 .child32{
+    width:50%;
+    height:50px;
+    background-color:salmon;
+}
+.parent .child3 .child33{
+    width:50%;
+    height:50px;
+    background-color:lawngreen;
+}
+.parent .child3 .child34{
+    width:50%;
+    height:50px;
+    background-color: fuchsia;
+}
+.parent .child4{
+    width:30.66%;
+    height:100px;
+    background-color:brown;
+    margin-bottom:10px;
+    margin-right:4%;
+}
+.parent .child5{
+    width:30.66%;
+    height: 100px;
+    background-color:blueviolet;
+    margin-right:4%;
+}
+.parent .child6{
+    width:30.66%;
+    height:100px;
+    background-color:aquamarine;
+}
+.parent .child7{
+    width:22%;
+    height:100px;
+    background-color:green;
+    margin-right:4%;
+}
+.parent .child8{
+    width:22%;
+    height:100px;
+    background-color:gold;
+    margin-right:4%;
+}
+.parent .child9{
+    width:22%;
+    height:100px;
+    background-color: crimson;
+    margin-right:4%;
+}
+.parent .child10{
+    width:22%;
+    height:100px;
+    background-color:tomato;
+}
+
+
+.container{
+    width:300px;
+    height: 300px;
+    background-color: blue;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:;
+}
+.container .box1{
+    width:100px;
+    height:100px;
+    background-color: red;
+}
+.container .box2{
+    width:100px;
+    height:100px;
+    background-color: yellow;
+}
+
+/* 
+Always remove height from parent elements after putting children element
+*/
