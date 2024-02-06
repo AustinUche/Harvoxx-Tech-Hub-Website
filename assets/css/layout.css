@@ -19,11 +19,12 @@
     
 } */
 
+  /*
 .parent{
     display:flex;
     flex-wrap:wrap;
     width: 400px;
-    /* height: 400px; */
+   height: 400px; 
     background-color:blue;
     padding:10px;
     margin-bottom:50px;
@@ -132,7 +133,7 @@
     height:100px;
     background-color: yellow;
 }
-
+*/
 /* 
 Always remove height from parent elements after putting children element
 */
