@@ -19,14 +19,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position:relative;
+  position: relative;
 }
 .header .container h1 {
   font-size: 30px;
 }
-.header .container h1 a{
-  text-decoration:none;
-  color:white;
+.header .container h1 a {
+  text-decoration: none;
+  color: white;
 }
 .header .container h1 span {
   color: #fdc134;
@@ -56,12 +56,12 @@ body {
 .header .container ul li a.get-started:hover {
   background-color: #fdc134;
 }
-.header .container i{
+.header .container i {
   font-size: 40px;
-  color:#fdc134;
-  display:none;
-  position:absolute;
-  right:0;
+  color: #fdc134;
+  display: none;
+  position: absolute;
+  right: 0;
 }
 
 .hero {
@@ -175,8 +175,8 @@ body {
   margin-right: 10px;
 }
 .about .container .right .down1 .down1-left i {
-  font-size:60px;
-  color:#fdc134;
+  font-size: 60px;
+  color: #fdc134;
 }
 .about .container .right .down1 .down1-right h4 {
   font-size: 25px;
@@ -199,8 +199,8 @@ body {
   margin-right: 10px;
 }
 .about .container .right .down2 .down1-left i {
-  font-size:60px;
-  color:#fdc134;
+  font-size: 60px;
+  color: #fdc134;
 }
 .about .container .right .down2 .down1-right h4 {
   font-size: 25px;
@@ -223,8 +223,8 @@ body {
   margin-right: 10px;
 }
 .about .container .right .down3 .down1-left i {
-  font-size:60px;
-  color:#fdc134;
+  font-size: 60px;
+  color: #fdc134;
 }
 .about .container .right .down3 .down1-right h4 {
   font-size: 25px;
@@ -246,8 +246,8 @@ body {
   margin-right: 10px;
 }
 .about .container .right .down4 .down1-left i {
-  font-size:60px;
-  color:#fdc134;
+  font-size: 60px;
+  color: #fdc134;
 }
 .about .container .right .down4 .down1-right h4 {
   font-size: 25px;
@@ -337,8 +337,24 @@ body {
   position: relative;
   border-top: 4px solid white;
   bottom: 90px;
-  transition:all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
+.services .container .box-container .box .box-content::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background: #fdc134;
+  top: -5px;
+  left: 0;
+  right: 0;
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
+.services .container .box-container .box:hover .box-content::before {
+  display: block;
+}
+
 .services .container .box-container .box .box-content h1 {
   width: 80%;
   margin: auto;
@@ -362,16 +378,6 @@ body {
 }
 .services .container .box-container .box:hover .box-content h1 a {
   color: #ffa500;
-}
-.services .container .box-container .box .box-content::before {
-  content:"";
-  position:absolute;
-  width:100%;
-  height: 6px;
-  background: #fdc134;
-  top:0;
-  left:40px;
-  right:0;
 }
 .services .container .box-container .box .box-content h1 span {
   font-size: 20px;
@@ -724,6 +730,10 @@ body {
   color: #fff;
   font-size: 18px;
   margin-top: 150px;
+  font-weight: 400;
+}
+.footer .container .second h3 span {
+  font-weight: 900;
 }
 .to-up {
   height: 60px;
@@ -738,11 +748,175 @@ body {
   right: 20px;
   cursor: pointer;
   z-index: 2;
+  transition: all 0.5s ease-in-out;
 }
-.to-up span {
+.to-up:hover {
+  background-color: #fdc134;
+}
+.to-up i {
+  font-size: 30px;
   color: white;
-  font-weight: bolder;
 }
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(60, 79, 119, .5);
+  display:flex;
+  justify-content:center;
+  z-index:5;
+  align-items:center;
+}
+.modal .container {
+  width: 20%;
+  background-color: #FFFFFF;
+  z-index:100;
+  opacity:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  position:relative;
+  padding:100px 0px 40px 0px;
+  border-radius:10px;
+}
+.modal .container .bx-check{
+  font-size:80px;
+  width:100px;
+  height:100px;
+  background-color: #6BD846;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:absolute;
+  top:-15%;
+  left:36%;
+  border-radius:50%;
+}
+.modal .container .content{
+  width: 75%;
+}
+.modal .container .content h3{
+  font-size:30px;
+  margin-bottom:15px;
+  top:30%
+}
+.modal .container .content p{
+  line-height:25px;
+  margin-bottom:40px;
+}
+.modal .container button{
+  color:#fff;
+  width:100%;
+  border-radius:5px;
+  background-color:#6FD649;
+  border:none;
+  top:80%;
+  padding:10px 50px;
+  cursor:pointer;
+}
+.modal .bx-x-circle{
+  font-size: 40px;
+  position:absolute;
+  right:20px;
+  top:20px;
+  color:#fdc134;
+  cursor:pointer;
+}
+
+
+.popup{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background-color: rgba(126, 159, 248,.5);
+  top:0;
+  left:0;
+  display:flex;
+  align-items:center;
+}
+.popup .container {
+  width:30%;
+  margin:auto;
+  background-color: white;
+  position:relative;
+}
+.popup .container i{
+  position:absolute;
+  right:10px;
+  top:10px;
+  font-size:40px;
+  color:gray;
+  cursor:pointer;
+}
+.popup .container .up{
+  width:90%;
+  margin:auto;
+  display:flex;
+  margin-top:50px;
+  margin-bottom:20px;
+}
+.popup .container .up .up1{
+  margin-right:3%;
+  display:flex;
+  align-items:center;
+  justify-content: flex-start;
+}
+.popup .container .up .up1 img{
+  width:70px;
+  height:70px;
+  border-radius: 50%;
+}
+.popup .container .up .up2{
+  width:70%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.popup .container .middle{
+  width:90%;
+  margin:auto;
+  margin-bottom:50px;
+}
+.popup .container .middle input{
+  width:100%;
+  padding: 20px 0px 200px 20px;
+  background-color:rgb(243, 243, 243);
+  border:none;
+}
+.popup .container .middle input:focus{
+  outline:none;
+}
+.popup .container .down{
+  width:90%;
+  height:10%;
+  margin:auto;
+  display:flex;
+  justify-content:flex-end;
+  gap:10px;
+  padding: 30px 0px;
+}
+.popup .container .down button{
+  padding: 10px 30px;
+  border:none;
+  color:white;
+  font-weight:800;
+  font-size:15px;
+  border-radius:5px;
+  cursor:pointer;
+}
+.popup .container .down button.cancel{
+  background-color: #F082AC;
+}
+.popup .container .down button.save{
+  background-color: #6F93F6;
+}
+
+
 
 ::-webkit-scrollbar {
   width: 6px;
@@ -759,14 +933,14 @@ body {
   display: none;
 }
 
-@media only screen and (max-width:690px){
-  .header .container h1{
-    display:none;
+@media only screen and (max-width: 690px) {
+  .header .container h1 {
+    display: none;
   }
-  .header .container ul{
-    display:none;
+  .header .container ul {
+    display: none;
   }
-  .header .container i{
-    display:block;
+  .header .container i {
+    display: block;
   }
 }
