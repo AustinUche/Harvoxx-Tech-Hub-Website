@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
     <title>Harvoxx Tech Hub - Home</title>
     <link rel="icon" type="png" href="assets/images/harvoxxlogo.png" />
     <link rel="stylesheet" href="assets/css/home.css" />
@@ -33,12 +33,10 @@
             Right here is an organized hub of seasoned and aspiring
             techpreneurs, developers, graphics designers and innovators with
             strong passion for technology and entrepreneurship.
-          </p>
-          <p>
+            <br> <br>
             It is a great platform for people to grow, develop amazing
             programming and business development skills
-          </p>
-          <p>
+            <br> <br>
             It is a community that has a fast growing alliances with Angel
             investors, VCs, NGOs and other tech communities.
           </p>
@@ -331,21 +329,9 @@
       <i class="bx bxs-chevron-up"></i>
     </div>
 
-    <!-- <div class="modal">
+    <div class="popup" id="popup">
       <div class="container">
-        <i class="bx bx-check"></i>
-        <div class="content">
-          <h3>Thank You!</h3>
-          <p>You details has been successfully submitted. Thanks!</p>
-          <button>OK</button>
-        </div>
-      </div>
-      <i class="bx bx-x-circle"></i>
-    </div> -->
-
-    <div class="popup">
-      <div class="container">
-        <i class="bx bx-x"></i>
+        <i class="bx bx-x" id="close"></i>
         <div class="up">
           <div class="up1">
             <img src="./assets/images/image.jpg" alt="">
@@ -365,6 +351,8 @@
       </div>
     </div>
   </body>
+
+  <script src="assets/js/home.js"></script>
 </html>
 
 <!-- 
@@ -372,4 +360,18 @@
   aesthetics - pseudo elements -hover, transition, animation
   libraries - icon library 
   mobile responsive design
+
+  JavaScript Course Outline:
+  Variables
+  Data types
+  Mathematical operators and operations
+  Conditional statements
+  Logical statements
+  Arrays
+  Objects
+  Loops
+  Functions
+  DOM Manipulations
+  Events
+  (Practice: Form validation, password strength checker)
  -->
