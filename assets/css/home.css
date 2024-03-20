@@ -157,12 +157,22 @@ body {
   color: #213b52;
   margin-bottom: 10px;
   font-family:"Raleway", sans-serif;
+  opacity:0;
+  transition:all 1s ease-in-out;
+}
+.about .container .right .up h3.active{
+  opacity:1;
 }
 .about .container .right .up p {
   line-height: 25px;
   font-size: 16px;
   color: #444444;
   font-family: 'Open Sans', sans-serif;
+  opacity:0;
+  transition:all 1s ease-in-out;
+}
+.about .container .right .up p.active{
+  opacity:1;
 }
 .about .container .right .up p a {
   text-decoration: none;
@@ -194,6 +204,23 @@ body {
   line-height: 25px;
   font-size: 15px;
   color: #848484;
+}
+
+.about .container .right .down1,
+.about .container .right .down2,
+.about .container .right .down3,
+.about .container .right .down4{
+  opacity:0;
+  transform: translateY(50px);
+  transition:all .5s ease-in-out;
+}
+
+.about .container .right .down1.active,
+.about .container .right .down2.active,
+.about .container .right .down3.active,
+.about .container .right .down4.active{
+  transform: translateY(0px);
+  opacity:1;
 }
 
 .about .container .right .down2 {
@@ -314,12 +341,31 @@ body {
   left: 48%;
   margin-top: 10px;
 }
-.services .container p {
+
+.services .container h2,
+.services .container h2::before,
+.services .container h2::after {
+  opacity:0;
+  transition:all 1s ease-in-out;
+}
+
+.services .container h2.active,
+.services .container h2.active::before,
+.services .container h2.active::after {
+  opacity:1;
+}
+
+.services .container #service {
   color: #686869;
   text-align: center;
   font-size: 18px;
   line-height: 22px;
   font-family:'Open Sans', sans-serif;
+  opacity:0;
+  transition: all 1s ease-in-out;
+}
+.services .container #service.active{
+  opacity:1;
 }
 .services .container .box-container {
   width: 100%;
@@ -331,6 +377,8 @@ body {
 .services .container .box-container .box {
   width: 48%;
   position: relative;
+  transition: all 1s ease-in-out;
+  /* opacity:0; */
 }
 .services .container .box-container .box .box-image {
   width: 100%;
