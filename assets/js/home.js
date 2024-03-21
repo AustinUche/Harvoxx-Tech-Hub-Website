@@ -45,7 +45,8 @@ toUp.addEventListener("click", () => {
 });
 
 
-
+const heroLeft = document.querySelector(".hero .container .left")
+const heroRight = document.querySelector(".hero .container .right")
 const aboutHead = document.querySelector(".about .container .right .up h3")
 const aboutHeadP = document.querySelector(".about .container .right .up p");
 const aboutbox1 = document.querySelector(".about .container .right .down1");
@@ -53,11 +54,28 @@ const aboutbox2 = document.querySelector(".about .container .right .down2");
 const aboutbox3 = document.querySelector(".about .container .right .down3");
 const aboutbox4 = document.querySelector(".about .container .right .down4");
 const serviceHead = document.querySelector(".services .container h2");
+const pricingHead = document.querySelector(".pricing .container h2");
+const contactHead = document.querySelector(".contact .container .h2-container");
 const serviceP = document.querySelector(".services .container #service")
-const serviceBox = document.querySelectorAll(".services .container .box-container .box")
+const serviceBox1 = document.querySelector(".services .container .box-container #box1");
+const serviceBox2 = document.querySelector(".services .container .box-container #box2");
+const serviceBox3 = document.querySelector(".services .container .box-container #box3");
+const serviceBox4 = document.querySelector(".services .container .box-container #box4");
+const serviceBox5 = document.querySelector(".services .container .box-container #box5");
+const serviceBox6 = document.querySelector(".services .container .box-container #box6");
+const contactBox1 = document.querySelector(".contact .container .left .box1")
+const contactBox2 = document.querySelector(".contact .container .left .box2")
+const contactBox3 = document.querySelector(".contact .container .left .box3")
+const contactForm = document.querySelector(".contact .container .right")
+const footer = document.querySelector(".footer .container")
 
+window.addEventListener("load", () => {
+    heroLeft.classList.add("active");
+    heroRight.classList.add("active");
+})
 
 window.addEventListener("scroll", () => {
+
   if (window.pageYOffset > 350) {
     aboutHead.classList.add("active")
   } else {
@@ -98,15 +116,52 @@ window.addEventListener("scroll", () => {
     serviceP.classList.remove("active")
   }
 
-  for (var i = 0; i <= 4; i++){
-    if (i % 2 == 0 && window.pageYOffset < 1224) {
-      serviceBox.style.transform = "translateX(50px)"
-      serviceBox.style.opacity = 0
-    } else if (i % 2 == 0 && window.pageYOffset > 1224) {
-      serviceBox.style.transform = "translateX(0px)"
-
-    }
+  if (window.pageYOffset > 1292) {
+    serviceBox1.classList.add("active")
+    serviceBox2.classList.add("active")
+  } else {
+    serviceBox1.classList.remove("active")
+    serviceBox2.classList.remove("active")
   }
+
+  if (window.pageYOffset > 1880) {
+    serviceBox3.classList.add("active")
+    serviceBox4.classList.add("active")
+  } else {
+    serviceBox3.classList.remove("active")
+    serviceBox4.classList.remove("active")
+  }
+  
+  if (window.pageYOffset > 2494) {
+    serviceBox5.classList.add("active")
+    serviceBox6.classList.add("active")
+  } else {
+    serviceBox5.classList.remove("active")
+    serviceBox6.classList.remove("active")
+  }
+
+  if (window.pageYOffset > 4438) {
+    contactBox1.classList.add("active");
+    contactForm.classList.add("active")
+  } else {
+    contactBox1.classList.remove("active");
+    contactForm.classList.remove("active")
+  }
+
+  if (window.pageYOffset > 4635) {
+    contactBox2.classList.add("active");
+    contactBox3.classList.add("active");
+  } else {
+    contactBox2.classList.remove("active");
+    contactBox3.classList.remove("active");
+  }
+
+  if (window.pageYOffset > 5100) {
+    footer.classList.add("active");
+  } else {
+    footer.classList.remove("active");
+  }
+    
 })
 
 
