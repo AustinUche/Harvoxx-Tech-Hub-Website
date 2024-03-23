@@ -1366,6 +1366,9 @@ body {
   .contact .container .right {
     width: 48%;
   }
+  .services .container .box-container .box .box-content {
+  height: 280px;
+}
   .footer .container {
     width: 90%;
     margin: auto;
