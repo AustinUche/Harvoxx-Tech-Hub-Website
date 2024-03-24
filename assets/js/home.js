@@ -156,20 +156,22 @@ console.log(before.display)
 
 
 const navSlide = () => {
-  navMenu.addEventListener("click", () => {
-    navMenu.style.display = "none";
-    navClose.style.display = "block";
-    navClose.style.color = "#fff";
-    navLinks.style.display = "flex"
-    navContainer.style.setProperty("--beforeDisplay", "block")
-  });
+  if (screen.width < 1024){
+    navMenu.addEventListener("click", () => {
+      navMenu.style.display = "none";
+      navClose.style.display = "block";
+      navClose.style.color = "#fff";
+      navLinks.style.display = "flex";
+      navContainer.style.setProperty("--beforeDisplay", "block");
+    });
 
-  navClose.addEventListener("click", () => {
-    navClose.style.display = "none";
-    navMenu.style.display = "block";
-    navLinks.style.display = "none"
-    navContainer.style.setProperty("--beforeDisplay", "none");    
-  });
+    navClose.addEventListener("click", () => {
+      navClose.style.display = "none";
+      navMenu.style.display = "block";
+      navLinks.style.display = "none";
+      navContainer.style.setProperty("--beforeDisplay", "none");
+    });
+  }
 }
 
 navSlide()
