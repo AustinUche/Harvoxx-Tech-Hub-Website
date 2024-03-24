@@ -147,12 +147,50 @@ window.addEventListener("scroll", () => {
 })
 
 
+
 const navMenu = document.querySelector(".header .container i.bx-menu")
 const navClose = document.querySelector(".header .container i.bx-x")
 const navLinks = document.querySelector(".header .container ul")
 let navContainer = document.querySelector(".header .container")
 const before = window.getComputedStyle(navContainer, "::before")
 console.log(before.display)
+
+const homeLink = document.querySelector("#homeLink").addEventListener("click", () => {
+  navLinks.style.display = "none"
+  navContainer.style.setProperty("--beforeDisplay", "none")
+  navClose.style.display = "none"
+  navMenu.style.display = "block"
+})
+
+const aboutLink = document.querySelector("#aboutLink").addEventListener("click", () => {
+  navLinks.style.display = "none";
+  navContainer.style.setProperty("--beforeDisplay", "none");
+  navClose.style.display = "none";
+  navMenu.style.display = "block"
+})
+
+const serviceLink = document.querySelector("#serviceLink").addEventListener("click", () => {
+  navLinks.style.display = "none";
+  navContainer.style.setProperty("--beforeDisplay", "none");
+  navClose.style.display = "none";
+  navMenu.style.display = "block"
+})
+
+const contactLink = document.querySelector("#contactLink").addEventListener("click", () => {
+  navLinks.style.display = "none";
+  navContainer.style.setProperty("--beforeDisplay", "none");
+  navClose.style.display = "none";
+  navMenu.style.display = "block";
+})
+
+const getLink = document
+  .querySelector("#getLink")
+  .addEventListener("click", () => {
+    navLinks.style.display = "none";
+    navContainer.style.setProperty("--beforeDisplay", "none");
+    navClose.style.display = "none";
+    navMenu.style.display = "block";
+  });
 
 
 const navSlide = () => {
