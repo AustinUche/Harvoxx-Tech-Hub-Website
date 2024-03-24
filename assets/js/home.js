@@ -10,24 +10,6 @@ close.addEventListener("click", () => {
   popup.style.display = "none";
 });
 
-// Assignment
-// write a program that checks the username and password of a user
-var username = "Uche";
-var password = "mynameisuche";
-
-if (username === "Uche") {
-  if (password === "mynameisuche") {
-    console.log("You're successfully logged in");
-  } else {
-    console.log("Username or password incorrect");
-  }
-}
-
-if (username === "Uche" && password === "mynameisuche") {
-  console.log("You're successfully logged in");
-} else {
-  console.log("Username or password incorrect");
-}
 
 
 const toUp = document.querySelector("#to-up");
@@ -163,6 +145,35 @@ window.addEventListener("scroll", () => {
   }
     
 })
+
+
+const navMenu = document.querySelector(".header .container i.bx-menu")
+const navClose = document.querySelector(".header .container i.bx-x")
+const navLinks = document.querySelector(".header .container ul")
+let navContainer = document.querySelector(".header .container")
+const before = window.getComputedStyle(navContainer, "::before")
+console.log(before.display)
+
+
+const navSlide = () => {
+  navMenu.addEventListener("click", () => {
+    navMenu.style.display = "none";
+    navClose.style.display = "block";
+    navClose.style.color = "#fff";
+    navLinks.style.display = "flex"
+    navContainer.style.setProperty("--beforeDisplay", "block")
+  });
+
+  navClose.addEventListener("click", () => {
+    navClose.style.display = "none";
+    navMenu.style.display = "block";
+    navLinks.style.display = "none"
+    navContainer.style.setProperty("--beforeDisplay", "none");    
+  });
+}
+
+navSlide()
+
 
 
 // var num = 10
